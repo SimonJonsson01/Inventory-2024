@@ -58,13 +58,6 @@ public abstract class Avatar {
                     this.getName() + " hade inget vapen!");
         }
 
-        /*
-         * while (this == (Player) this) { // FUNKAR DETTA ???
-         * System.out.println("Du har inget vapen.");
-         * break;
-         * }
-         */
-
     }
 
     public void printHealthBar() {

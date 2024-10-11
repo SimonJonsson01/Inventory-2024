@@ -1,3 +1,4 @@
+import Avatar.Player;
 import Game.Game;
 
 public class App {
@@ -6,6 +7,6 @@ public class App {
         System.out.println();
 
         @SuppressWarnings("unused")
-        Game game = new Game( "Mange"/* Player.setPlayerName() */);
+        Game game = new Game(Player.setPlayerName());
     }
 }

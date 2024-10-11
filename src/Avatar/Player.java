@@ -16,22 +16,12 @@ public class Player extends Avatar {
         setName(name);
         setMaxHP(startHP);
         setHP(getMaxHP());
-        setWeapon(new Weapon(Rarity.RARE, DamageType.getRandomWeapon()));
+        setWeapon(new Weapon(Rarity.COMMON, DamageType.getRandomWeapon()));
         setArmor(new Armor(Rarity.COMMON, ArmorType.getRandomArmor()));
         getInventory().addItem(getWeapon());
         getInventory().addItem(getArmor());
         getInventory().addItem(new Consumable(Rarity.COMMON));
-
         
-        getInventory().addItem(new Gems(Rarity.getRandomRarity(), Valuables.getRandomGem()));
-        getInventory().addItem(new Gems(Rarity.getRandomRarity(), Valuables.getRandomGem()));
-        getInventory().addItem(new Gems(Rarity.getRandomRarity(), Valuables.getRandomGem()));
-        getInventory().addItem(new Gems(Rarity.getRandomRarity(), Valuables.getRandomGem()));
-        getInventory().addItem(new Gems(Rarity.getRandomRarity(), Valuables.getRandomGem()));
-        getInventory().addItem(new Gems(Rarity.getRandomRarity(), Valuables.getRandomGem()));
-        getInventory().addItem(new Gems(Rarity.getRandomRarity(), Valuables.getRandomGem())); 
-        
-
     }
 
     @Override
